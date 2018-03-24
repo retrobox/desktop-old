@@ -24,6 +24,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import fr.thingmill.retroapp.HttpRequest;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
@@ -35,7 +36,7 @@ import fr.theshark34.swinger.event.SwingerEventListener;
 import fr.theshark34.swinger.textured.STexturedButton;
 import java.awt.Font;
 
-@SuppressWarnings("serial")
+@SuppressWarnings({ "serial", "unused" })
 public class Panel extends JPanel implements SwingerEventListener {	
 	private Image background  = Swinger.getResource("Background.jpg");
 	public static JTextField usernameField = new javax.swing.JTextField();
@@ -222,7 +223,7 @@ public class Panel extends JPanel implements SwingerEventListener {
 			System.out.println("Bouton 'Jouer' cliquer");
 
 			
-			//setFieldsEnabled(false); //Desactive les Fiels et le bouton, une seule chance
+			//setFieldsEnabled(false); //Desactive les Fields et le bouton, une seule chance
 			
 			if(usernameField.getText().replaceAll(" ", "").length() == 0 || passwordField.getText().length() ==0) {	
              	jLabel_Message.setText("Veuillez entrer un pseudo et un mot de passe valides.");
@@ -243,14 +244,24 @@ public class Panel extends JPanel implements SwingerEventListener {
 			        System.out.println("Connecté à internet");   
 
           Thread t = new Thread() {
+        	  //request api http
+        	  //ouverture du lien de connection
+        	  //ouverture fenetre demande de code de verification
+        	  //comparaison avec l'api code client et serveur
+        	  //ouverture de l'app et mise a jour
+        	  
+        	  
+        	  
               @Override
               public void run() {
+            	  //HttpRequest.get("https://api.lefuturiste.fr/minecraft/mc01/start/confirm%22).basic(%22JiVhfFwirHvMsHPLMMq4%22,%22Z6dGr2b2N62oUabpbrb2k5yPLvZCSN%22).code();";
                   Connection connection;
                   PreparedStatement ps;
                   try {
                 	  Driver myDriver = new com.mysql.jdbc.Driver();
                       DriverManager.registerDriver(myDriver);
                       
+                      connection = DriverManager.getConnection("your own password and login");
                       ps = connection.prepareStatement("SELECT `username`, `password` FROM `users` WHERE `username` = ? AND `password` = ?");
                       System.out.println("Connexion réussi a la base de donnée");
                       ps.setString(1, usernameField.getText());

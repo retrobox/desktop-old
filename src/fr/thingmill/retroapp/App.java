@@ -54,9 +54,21 @@ public class App {
 	}
 	
 	public static void launch() throws IOException {
-      	System.out.println("Connection réussi");
-      	@SuppressWarnings("unused")
-		fr.thingmill.retroapp.principal.SettingsFrame frame = new fr.thingmill.retroapp.principal.SettingsFrame();
+      	System.out.println("Lancement de l'application... Mise à jour réussi !");
+            Runtime runtime = Runtime.getRuntime();     //getting Runtime object
+     
+            try
+            {
+                runtime.exec(System.getenv("LOCALAPPDATA") + "\\Programs\\RetroApp\\app.exe");        //open retroapp.exe
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+              	System.out.println("Erreur lors du lancement");
+            }
+      	
+      	
+		//fr.thingmill.retroapp.principal.SettingsFrame frame = new fr.thingmill.retroapp.principal.SettingsFrame();
       	Frame.getInstance().setVisible(false);
       	
 	}

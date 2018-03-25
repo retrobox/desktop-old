@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_162">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="src/Ressources/controlsfx-8.40.14.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/controlsfx-samples-8.40.14.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/fontawesomefx-8.9.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/fxsampler-1.0.10.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/jfoenix-8.0.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

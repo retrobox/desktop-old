@@ -215,8 +215,7 @@ public class Panel extends JPanel implements SwingerEventListener {
 	}
 	
 	@SuppressWarnings("deprecation")
-	@Override
- public void onEvent(SwingerEvent e) {
+	public void onEvent(SwingerEvent e) {
 	   if(e.getSource() == playButton) {
 			System.out.println("Bouton 'Jouer' cliquer");
 

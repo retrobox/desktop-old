@@ -12,5 +12,14 @@
 	<classpathentry kind="lib" path="src/Ressources/fontawesomefx-8.9.jar"/>
 	<classpathentry kind="lib" path="src/Ressources/fxsampler-1.0.10.jar"/>
 	<classpathentry kind="lib" path="src/Ressources/jfoenix-8.0.1.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/s-update-3.1.0-BETA.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/sqlite-jdbc-3.7.15-M1.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/sqlite-jdbc-3.7.15-SNAPSHOT-2.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/sqlite-jdbc-3.7.15-SNAPSHOT-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/sqlite-jdbc-3.7.15-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/sqlite-jdbc-3.7.2.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/sqlite-jdbc4-3.8.2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="src/Ressources/swinger-1.0.0-BETA.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

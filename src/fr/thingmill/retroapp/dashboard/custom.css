@@ -28,7 +28,7 @@ and open the template in the editor.
 	-fx-background-color: #26B99A;
 	-fx-background-radius: 2.0;
 	-fx-background-insets: 0.0;
-        -fx-pref-width:3;
+     -fx-pref-width:3;
 	-fx-border-width: 0.0;
 	-fx-effect: null;
 }
@@ -43,7 +43,7 @@ and open the template in the editor.
 
 .custom-progress-bar>.track {
 /*	-fx-background-color: derive(#D5D5D5, 50.0%);*/
-        -fx-background-color:#CDCDCD;
+    -fx-background-color:#CDCDCD;
 	-fx-background-radius: 2.0;
 	-fx-padding: 0.0;
 }

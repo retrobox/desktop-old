@@ -23,6 +23,7 @@ public class MainApp extends Application {
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("RetroApp for RetroBox console");
+        
         initRootLayout();
 
         showPersonOverview();

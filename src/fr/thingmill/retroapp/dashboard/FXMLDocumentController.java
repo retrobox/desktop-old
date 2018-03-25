@@ -6,6 +6,9 @@
 package fr.thingmill.retroapp.dashboard;
 
 import com.jfoenix.controls.JFXButton;
+
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,12 +20,16 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 /**
  *
- * @author danml
+ * @author Stoneset for RetroBox
  */
 public class FXMLDocumentController implements Initializable {
 
@@ -31,30 +38,30 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private JFXButton btnHome;
     @FXML
-    private JFXButton btnPricing;
+    private JFXButton btnInstall;
     @FXML
-    private JFXButton btnContacts;
+    private JFXButton btnNavigate;
     @FXML
-    private JFXButton btnWidgets;
+    private JFXButton btnManual;
     @FXML
-    private JFXButton btnProfile;
+    private JFXButton btnSettings;
     @FXML
-    private JFXButton btnAlerts;
+    private JFXButton btnProfiles;
     
-    AnchorPane contacts,alerts,pricing,profiles,widgets,controls;
+    AnchorPane navigate,install,profiles,manual,settings,home;
     @FXML
     private JFXButton btnControls;
 
     public void initialize(URL url, ResourceBundle rb) {
         //Load all fxmls in a cache
         try {
-             contacts = FXMLLoader.load(getClass().getResource("Contacts.fxml"));
-             alerts = FXMLLoader.load(getClass().getResource("Alerts.fxml"));
-             pricing = FXMLLoader.load(getClass().getResource("Pricing.fxml"));
+             navigate = FXMLLoader.load(getClass().getResource("navigate.fxml"));
+             install = FXMLLoader.load(getClass().getResource("install.fxml"));
              profiles = FXMLLoader.load(getClass().getResource("Profiles.fxml"));
-             widgets = FXMLLoader.load(getClass().getResource("Widgets.fxml"));
-             controls = FXMLLoader.load(getClass().getResource("Controls.fxml"));
-            setNode(pricing);
+             manual = FXMLLoader.load(getClass().getResource("manual.fxml"));
+             settings = FXMLLoader.load(getClass().getResource("settings.fxml"));
+             home = FXMLLoader.load(getClass().getResource("home.fxml"));
+
         } catch (IOException ex) {
             Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -76,18 +83,40 @@ public class FXMLDocumentController implements Initializable {
     }
 
     @FXML
-    private void switchPricing(ActionEvent event) {
-        setNode(pricing);
+    private void switchInstall(ActionEvent event) {
+        setNode(install);
+    }
+    
+    @FXML
+    private void switchHome(ActionEvent event) {
+        setNode(home);
     }
 
     @FXML
-    private void switchContacts(ActionEvent event) {
-        setNode(contacts);
+    private void switchNavigate(ActionEvent event) throws IOException {
+    	setNode(navigate);
+
+        try {
+        	System.out.println("Ouverture du dossier...");
+        	String command = "cmd /c %windir%\\explorer.exe \\\\RETROPIE";
+            Runtime.getRuntime().exec(command);
+        } 
+        catch (IllegalArgumentException iae) {
+            System.out.println("Connexion impossible");
+            Alert alert = new Alert(AlertType.WARNING);
+            alert.setTitle("Connexion impossible...");
+            alert.setHeaderText(null);
+            Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+            stage.getIcons().add(new Image(this.getClass().getResource("/fr/thingmill/retroapp/icons/icon.png").toString()));
+            alert.setContentText("Connexion impossible ! Vérifier si votre console est connectée !");
+
+            alert.showAndWait();
+        }
     }
 
     @FXML
-    private void switchWidget(ActionEvent event) {
-        setNode(widgets);
+    private void switchManual(ActionEvent event) {
+        setNode(manual);
     }
 
     @FXML
@@ -95,14 +124,10 @@ public class FXMLDocumentController implements Initializable {
         setNode(profiles);
     }
 
-    @FXML
-    private void switchAlert(ActionEvent event) {
-        setNode(alerts);
-    }
 
     @FXML
-    private void switchControls(ActionEvent event) {
-        setNode(controls);
+    private void switchSettings(ActionEvent event) {
+        setNode(settings);
     }
 
 }

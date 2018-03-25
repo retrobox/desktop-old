@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXProgressBar?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -41,7 +40,12 @@
             <Font size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="781.0" layoutY="451.0" text="Ignorer..." textFill="#a0a2ab">
+      <JFXButton layoutX="340.0" layoutY="416.0" text="Mot de passe oublié ?" textFill="#a0a2ab" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="769.0" layoutY="446.0" text="Ignorer..." textFill="#a0a2ab">
          <font>
             <Font size="10.0" />
          </font>
@@ -67,7 +71,5 @@
             <Image url="@Ressources/ic_clear_black_48dp_2x.png" />
          </image>
       </ImageView>
-      <Label fx:id="infoLabel" layoutX="99.0" layoutY="350.0" text="Label" />
-      <JFXProgressBar fx:id="progressBar" layoutY="448.0" prefHeight="2.0" prefWidth="836.0" />
    </children>
 </AnchorPane>

@@ -1,10 +1,10 @@
-package fr.thingmill.retroapp;
+package fr.thingmill.retroapp.settings;
 
 
 import java.io.File;
 import java.io.IOException;
 
-import fr.thingmill.retroapp.view.PersonOverviewController;
+import fr.thingmill.retroapp.view.settings.PersonOverviewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -13,7 +13,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class MainApp extends Application {
+public class MainAppsettings extends Application {
 
 	public static final File RA_OUT = new File (System.getenv("LOCALAPPDATA") + "\\Programs\\RetroApp\\");
 
@@ -36,7 +36,7 @@ public class MainApp extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
+            loader.setLocation(MainAppsettings.class.getResource("view/RootLayout.fxml"));
             rootLayout = (BorderPane) loader.load();
 
             // Show the scene containing the root layout.
@@ -56,7 +56,7 @@ public class MainApp extends Application {
         try {
             // Load person overview.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
+            loader.setLocation(MainAppsettings.class.getResource("view/PersonOverview.fxml"));
             AnchorPane personOverview = (AnchorPane) loader.load();
 
             // Set person overview into the center of root layout.

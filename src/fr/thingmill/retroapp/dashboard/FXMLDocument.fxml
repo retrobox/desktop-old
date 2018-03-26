@@ -44,10 +44,9 @@
             </Label>
          </left>
       </JFXToolbar>
-      <VBox layoutY="41.0" prefHeight="719.0" prefWidth="173.0" style="-fx-background-color: #2A3F54;">
+      <VBox layoutY="41.0" prefHeight="285.0" prefWidth="211.0" style="-fx-background-color: #2A3F54;">
          <children>
-            <Label prefHeight="2.0" prefWidth="173.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-text-fill: #7387A8; -fx-border-color: #7387A8; -fx-border-width: 0 0 2 0;" />
-            <JFXButton fx:id="btnHome" onAction="#switchHome" prefHeight="42.0" prefWidth="173.0" style="-fx-alignment: left;" styleClass="nav-button" text="Home" textFill="#a1aec4">
+            <JFXButton fx:id="btnHome" onAction="#switchHome" prefHeight="42.0" prefWidth="442.0" style="-fx-alignment: left;" styleClass="nav-button" text="Home" textFill="#a1aec4">
                <font>
                   <Font name="Roboto Bold" size="14.0" />
                </font>
@@ -55,7 +54,7 @@
                   <FontAwesomeIconView fill="#a1aec4" glyphName="DASHBOARD" size="17.0" wrappingWidth="43.0" />
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnInstall" layoutX="10.0" layoutY="67.0" onAction="#switchInstall" prefHeight="42.0" prefWidth="173.0" style="-fx-alignment: left;" styleClass="nav-button" text="Installer des jeux" textFill="#a1aec4">
+            <JFXButton fx:id="btnInstall" layoutX="10.0" layoutY="67.0" onAction="#switchInstall" prefHeight="42.0" prefWidth="266.0" style="-fx-alignment: left;" styleClass="nav-button" text="Installer des jeux" textFill="#a1aec4">
                <font>
                   <Font name="Roboto Bold" size="14.0" />
                </font>
@@ -63,7 +62,7 @@
                   <FontAwesomeIconView fill="#a1aec4" glyphName="GAMEPAD" size="17" wrappingWidth="43.0" />
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnNavigate" layoutX="10.0" layoutY="109.0" onAction="#switchNavigate" prefHeight="42.0" prefWidth="174.0" style="-fx-alignment: left;" styleClass="nav-button" text="Naviguer" textFill="#a1aec4">
+            <JFXButton fx:id="btnNavigate" layoutX="10.0" layoutY="109.0" onAction="#switchNavigate" prefHeight="42.0" prefWidth="370.0" style="-fx-alignment: left;" styleClass="nav-button" text="Naviguer" textFill="#a1aec4">
                <font>
                   <Font name="Roboto Bold" size="14.0" />
                </font>
@@ -71,7 +70,7 @@
                   <FontAwesomeIconView fill="#a1aec4" glyphName="FOLDER" size="17.0" wrappingWidth="43.0" />
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnManual" layoutX="10.0" layoutY="151.0" onAction="#switchManual" prefHeight="42.0" prefWidth="175.0" style="-fx-alignment: left;" styleClass="nav-button" text="Manuels" textFill="#a1aec4">
+            <JFXButton fx:id="btnManual" layoutX="10.0" layoutY="151.0" onAction="#switchManual" prefHeight="42.0" prefWidth="289.0" style="-fx-alignment: left;" styleClass="nav-button" text="Manuels" textFill="#a1aec4">
                <font>
                   <Font name="Roboto Bold" size="14.0" />
                </font>
@@ -79,7 +78,7 @@
                   <FontAwesomeIconView fill="#a1aec4" glyphName="BOOK" size="17" wrappingWidth="43.0" />
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnProfiles" layoutX="10.0" layoutY="193.0" onAction="#switchProfile" prefHeight="42.0" prefWidth="176.0" style="-fx-alignment: left;" styleClass="nav-button" text="Profile" textFill="#a1aec4">
+            <JFXButton fx:id="btnProfiles" layoutX="10.0" layoutY="193.0" onAction="#switchProfile" prefHeight="42.0" prefWidth="214.0" style="-fx-alignment: left;" styleClass="nav-button" text="Profile" textFill="#a1aec4">
                <font>
                   <Font name="Roboto Bold" size="14.0" />
                </font>
@@ -95,8 +94,39 @@
                   <FontAwesomeIconView fill="#a1aec4" glyphName="COG" size="17.0" wrappingWidth="43.0" />
                </graphic>
             </JFXButton>
+            <Label prefHeight="27.0" prefWidth="213.0" rotate="180.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-text-fill: #7387A8; -fx-border-color: #7387A8; -fx-border-width: 0 0 2 0;" />
          </children>
       </VBox>
-      <AnchorPane fx:id="holderPane" layoutX="172.0" layoutY="42.0" prefHeight="713.0" prefWidth="1187.0" />
+      <AnchorPane fx:id="holderPane" layoutX="211.0" layoutY="42.0" prefHeight="713.0" prefWidth="1148.0" />
+      <VBox layoutY="625.0" prefHeight="136.0" prefWidth="211.0" style="-fx-background-color: #2A3F54;">
+         <children>
+            <Label prefHeight="27.0" prefWidth="211.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-text-fill: #7387A8; -fx-border-color: #7387A8; -fx-border-width: 0 0 2 0;" />
+            <JFXButton fx:id="btnManual1" layoutX="10.0" layoutY="151.0" onAction="#switchManual" prefHeight="42.0" prefWidth="212.0" style="-fx-alignment: left;" styleClass="nav-button" text="Acheter une RetroBox" textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="shopping-cart" size="17" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSettings1" onAction="#switchSettings" prefHeight="46.0" prefWidth="211.0" style="-fx-alignment: left;" styleClass="nav-button" text="A propos" textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="INFO" lineSpacing="2.0" size="18.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton accessibleRole="TEXT" prefHeight="8.0" prefWidth="211.0" style="-fx-alignment: left;" styleClass="nav-button" text="Made with ❤ in France" textFill="#a1aec4">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="COFFEE" size="17.0" wrappingWidth="43.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <VBox layoutY="326.0" prefHeight="318.0" prefWidth="211.0" style="-fx-background-color: #2A3F54;" />
    </children>
 </AnchorPane>

@@ -6,9 +6,6 @@
 package fr.thingmill.retroapp.dashboard;
 
 import com.jfoenix.controls.JFXButton;
-
-import java.awt.Desktop;
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;

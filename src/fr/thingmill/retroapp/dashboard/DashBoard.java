@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author danml
+ * @author StoneSet for RetroBox
  */
 public class DashBoard extends Application {
     @FXML
@@ -30,7 +30,7 @@ public class DashBoard extends Application {
         stage.setTitle("Dashboard for RetroBox console");
         stage.getIcons().add(new Image("/fr/thingmill/retroapp/icons/icon.png"));
         stage.setScene(scene);
-        stage.setResizable(false);
+        stage.setResizable(true);
         stage.show();
     }
 

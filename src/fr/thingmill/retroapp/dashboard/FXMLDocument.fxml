@@ -97,32 +97,32 @@
             <Label prefHeight="27.0" prefWidth="213.0" rotate="180.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-text-fill: #7387A8; -fx-border-color: #7387A8; -fx-border-width: 0 0 2 0;" />
          </children>
       </VBox>
-      <AnchorPane fx:id="holderPane" layoutX="211.0" layoutY="42.0" prefHeight="713.0" prefWidth="1148.0" />
+      <AnchorPane fx:id="holderPane" layoutX="211.0" layoutY="42.0" prefHeight="720.0" prefWidth="1151.0" />
       <VBox layoutY="625.0" prefHeight="136.0" prefWidth="211.0" style="-fx-background-color: #2A3F54;">
          <children>
             <Label prefHeight="27.0" prefWidth="211.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-text-fill: #7387A8; -fx-border-color: #7387A8; -fx-border-width: 0 0 2 0;" />
-            <JFXButton fx:id="btnManual1" layoutX="10.0" layoutY="151.0" onAction="#switchManual" prefHeight="42.0" prefWidth="212.0" style="-fx-alignment: left;" styleClass="nav-button" text="Acheter une RetroBox" textFill="#a1aec4">
+            <JFXButton fx:id="btnBuy" layoutX="10.0" layoutY="151.0" onAction="#switchButtonBuy" prefHeight="42.0" prefWidth="212.0" style="-fx-alignment: left;" styleClass="nav-button" text="Acheter une RetroBox" textFill="#a1aec4">
                <font>
                   <Font name="Roboto Bold" size="14.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="#a1aec4" glyphName="shopping-cart" size="17" wrappingWidth="43.0" />
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="shopping-cart" size="17" wrappingWidth="37.0" />
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btnSettings1" onAction="#switchSettings" prefHeight="46.0" prefWidth="211.0" style="-fx-alignment: left;" styleClass="nav-button" text="A propos" textFill="#a1aec4">
+            <JFXButton fx:id="btninfo" onAction="#switchButtonInfo" prefHeight="46.0" prefWidth="211.0" style="-fx-alignment: left;" styleClass="nav-button" text="A propos" textFill="#a1aec4">
                <font>
                   <Font name="Roboto Bold" size="14.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="#a1aec4" glyphName="INFO" lineSpacing="2.0" size="18.0" wrappingWidth="43.0" />
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="INFO" lineSpacing="2.0" size="18.0" wrappingWidth="35.66668701171875" />
                </graphic>
             </JFXButton>
-            <JFXButton accessibleRole="TEXT" prefHeight="8.0" prefWidth="211.0" style="-fx-alignment: left;" styleClass="nav-button" text="Made with ❤ in France" textFill="#a1aec4">
+            <JFXButton fx:id="btnCreator" accessibleRole="TEXT" onAction="#switchButtonCreator" prefHeight="28.0" prefWidth="240.0" style="-fx-alignment: left;" styleClass="nav-button" text="Made with ❤ in France" textFill="#a1aec4">
                <font>
                   <Font name="Roboto Bold" size="14.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="#a1aec4" glyphName="COFFEE" size="17.0" wrappingWidth="43.0" />
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="COFFEE" size="17.0" wrappingWidth="33.666656494140625" />
                </graphic>
             </JFXButton>
          </children>

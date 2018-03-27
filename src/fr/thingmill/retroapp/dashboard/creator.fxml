@@ -58,7 +58,7 @@
             <Image url="@../icons/os.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="69.0" layoutX="302.0" layoutY="651.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="66.0" fitWidth="53.0" layoutX="311.0" layoutY="652.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../icons/github.png" />
          </image>

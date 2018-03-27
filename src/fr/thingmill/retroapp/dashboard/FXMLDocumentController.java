@@ -153,7 +153,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void switchButtonInfo(ActionEvent event) {
-    	setNode(info);
+    	setNode(creator);
     }
     @FXML
     private void switchButtonBuy(ActionEvent event) {
@@ -161,7 +161,7 @@ public class FXMLDocumentController implements Initializable {
     }
     @FXML
     private void switchButtonCreator(ActionEvent event) {
-    	setNode(creator);
+//openlink
     }
     ////////////////////////////////////////////////////////////////////////////////////    ////////////////////////////////////////////////////////////////////////////////////
     @FXML

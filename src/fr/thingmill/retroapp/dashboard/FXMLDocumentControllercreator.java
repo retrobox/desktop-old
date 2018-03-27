@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package fr.thingmill.retroapp.dashboard;
 
 import com.jfoenix.controls.JFXButton;
@@ -29,6 +25,7 @@ import javafx.util.Duration;
  *
  * @author Stoneset for RetroBox
  */
+@SuppressWarnings("unused")
 public class FXMLDocumentControllercreator implements Initializable {
 
     @FXML
@@ -49,7 +46,6 @@ public class FXMLDocumentControllercreator implements Initializable {
     @FXML
     private JFXButton linkGithub;
     
-    //AnchorPane navigate,install,profiles,manual,settings,home,info,buy,creator;
     @FXML
     private JFXButton btnControls;
 

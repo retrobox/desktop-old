@@ -30,7 +30,7 @@ public class DashBoard extends Application {
         stage.setTitle("Dashboard for RetroBox console");
         stage.getIcons().add(new Image("/fr/thingmill/retroapp/icons/icon.png"));
         stage.setScene(scene);
-        stage.setResizable(true);
+        stage.setResizable(false);
         stage.show();
     }
 

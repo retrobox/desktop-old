@@ -15,7 +15,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1219.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Achat - RetroBox" />
+      <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Boutique - RetroBox" />
       <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
       <GridPane hgap="10.0" layoutX="19.0" layoutY="80.0" prefHeight="614.0" prefWidth="1187.0">
          <columnConstraints>
@@ -34,17 +34,17 @@
                      <children>
                         <VBox layoutX="60.0" layoutY="18.0" prefHeight="97.0" prefWidth="234.0">
                            <children>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;" text="RetroBox" />
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 22; -fx-font-weight: bold;" text="Version KIT" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="149.0" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;" text="RetroBox" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="169.0" style="-fx-text-fill: white; -fx-font-size: 22; -fx-font-weight: bold;" text="Version KIT" />
                            </children>
                         </VBox>
                      </children>
                   </Pane>
                   <Pane prefHeight="472.0" prefWidth="252.0" style="-fx-background-radius: 2; -fx-background-color: #EFEFEF;">
                      <children>
-                        <Separator layoutY="352.0" prefHeight="4.0" prefWidth="289.0" />
+                        <Separator layoutX="33.0" layoutY="350.0" prefHeight="4.0" prefWidth="289.0" />
                         <Label layoutX="120.0" layoutY="422.0" prefHeight="30.0" prefWidth="114.0" style="-fx-alignment: center; -fx-font-size: 17; -fx-font-weight: bold; -fx-text-fill: #374850;" text="54,99€" textAlignment="CENTER" />
-                        <VBox layoutX="9.0" layoutY="14.0" prefHeight="336.0" prefWidth="234.0">
+                        <VBox layoutX="9.0" layoutY="14.0" prefHeight="336.0" prefWidth="339.0">
                            <children>
                               <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="248.0">
                                  <children>
@@ -53,7 +53,7 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Unlimited  Storage" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="La console en kit" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="231.0">
@@ -63,7 +63,7 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Limited download quota" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Carte SD 8Go" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="248.0">
@@ -73,37 +73,27 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Cash on delivery" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Boitier plexiglass / 3D" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="100.0" prefHeight="45.0" prefWidth="248.0">
                                  <children>
-                                    <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/Delete.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="All times updates" />
+                                    <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="461.0">
+                                       <children>
+                                          <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/check.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Personnalisation possible" />
+                                       </children>
+                                    </HBox>
                                  </children>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="248.0">
-                                 <children>
-                                    <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/Delete.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="204.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Unlimited access to all files" />
-                                 </children>
-                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="248.0" />
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="248.0">
                                  <children>
-                                    <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/Delete.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="204.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Unlimited  Storage" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="204.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="235.0" prefHeight="45.0" prefWidth="248.0">
@@ -113,7 +103,7 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="205.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Allowed exclusion per sale" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="285.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Garrantie 3 mois et support illimité" />
                                  </children>
                               </HBox>
                            </children>
@@ -129,8 +119,8 @@
                      <children>
                         <VBox layoutX="60.0" layoutY="18.0" prefHeight="97.0" prefWidth="234.0">
                            <children>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;" text="RetroBox" />
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 22; -fx-font-weight: bold;" text="Version prémonté" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="126.0" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;" text="RetroBox" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="213.0" style="-fx-text-fill: white; -fx-font-size: 22; -fx-font-weight: bold;" text="Version prémonté" />
                            </children>
                         </VBox>
                         <Label layoutX="137.0" layoutY="115.0" prefHeight="30.0" prefWidth="81.0" style="-fx-alignment: center; -fx-font-size: 14; -fx-text-fill: white; -fx-background-color: #117C68; -fx-background-radius: 1;" text="+Infos" />
@@ -140,7 +130,7 @@
                      <children>
                         <Separator layoutX="32.0" layoutY="348.0" prefHeight="4.0" prefWidth="290.0" />
                         <Label layoutX="121.0" layoutY="422.0" prefHeight="30.0" prefWidth="114.0" style="-fx-alignment: center; -fx-font-size: 17; -fx-font-weight: bold; -fx-text-fill: #374850;" text="59,99€" textAlignment="CENTER" />
-                        <VBox layoutX="9.0" layoutY="14.0" prefHeight="336.0" prefWidth="234.0">
+                        <VBox layoutX="9.0" layoutY="14.0" prefHeight="336.0" prefWidth="339.0">
                            <children>
                               <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="248.0">
                                  <children>
@@ -149,7 +139,7 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Unlimited  Storage" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="La console prémonté" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="231.0">
@@ -159,7 +149,7 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Limited download quota" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Carte SD 8Go" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="248.0">
@@ -169,47 +159,33 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Cash on delivery" />
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="100.0" prefHeight="45.0" prefWidth="248.0">
-                                 <children>
-                                    <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/check.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="All times updates" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Boitier plexiglass / 3D" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="248.0">
                                  <children>
-                                    <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/Delete.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="204.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Unlimited access to all files" />
+                                    <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="248.0">
+                                       <children>
+                                          <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icons/check.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Personnalisation possible" />
+                                       </children>
+                                    </HBox>
                                  </children>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="248.0">
-                                 <children>
-                                    <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/Delete.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="204.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Unlimited  Storage" />
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="235.0" prefHeight="45.0" prefWidth="248.0">
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="248.0" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="248.0" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="248.0">
                                  <children>
                                     <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="205.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Allowed exclusion per sale" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="285.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Garrantie 6 mois et support illimité" />
                                  </children>
                               </HBox>
                            </children>
@@ -223,10 +199,10 @@
                <children>
                   <Pane prefHeight="132.0" prefWidth="267.0" style="-fx-background-color: #1ABB9C; -fx-background-radius: 0;">
                      <children>
-                        <VBox layoutX="60.0" layoutY="18.0" prefHeight="97.0" prefWidth="234.0">
+                        <VBox layoutX="31.0" layoutY="18.0" prefHeight="97.0" prefWidth="292.0">
                            <children>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;" text="RetroBox" />
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="234.0" style="-fx-text-fill: white; -fx-font-size: 22; -fx-font-weight: bold;" text="Toutes options" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="162.0" style="-fx-text-fill: white; -fx-font-size: 24; -fx-font-weight: bold;" text="RetroBox" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="307.0" style="-fx-text-fill: white; -fx-font-size: 22; -fx-font-weight: bold;" text="Toutes options incluses" />
                            </children>
                         </VBox>
                         <Label layoutX="137.0" layoutY="115.0" prefHeight="30.0" prefWidth="81.0" style="-fx-alignment: center; -fx-font-size: 14; -fx-text-fill: white; -fx-background-color: #117C68; -fx-background-radius: 1;" text="+Infos" />
@@ -235,7 +211,7 @@
                   <Pane prefHeight="472.0" prefWidth="252.0" style="-fx-background-radius: 2; -fx-background-color: #EFEFEF;">
                      <children>
                         <Separator layoutX="32.0" layoutY="348.0" prefHeight="4.0" prefWidth="289.0" />
-                        <Label layoutX="120.0" layoutY="419.0" prefHeight="30.0" prefWidth="114.0" style="-fx-alignment: center; -fx-font-size: 17; -fx-font-weight: bold; -fx-text-fill: #374850;" text="100€" textAlignment="CENTER" />
+                        <Label layoutX="120.0" layoutY="419.0" prefHeight="30.0" prefWidth="114.0" style="-fx-alignment: center; -fx-font-size: 17; -fx-font-weight: bold; -fx-text-fill: #374850;" text="120€" textAlignment="CENTER" />
                         <VBox layoutX="9.0" layoutY="14.0" prefHeight="336.0" prefWidth="234.0">
                            <children>
                               <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="248.0">
@@ -245,7 +221,7 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Unlimited  Storage" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="La console prémonté" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="231.0">
@@ -255,7 +231,7 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Limited download quota" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Carte SD 16Go" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="248.0">
@@ -265,7 +241,7 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Cash on delivery" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Boitier plexiglass / 3D" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="100.0" prefHeight="45.0" prefWidth="248.0">
@@ -275,7 +251,7 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="All times updates" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="188.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Personnalisation possible" />
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="248.0">
@@ -285,19 +261,10 @@
                                           <Image url="@../icons/check.png" />
                                        </image>
                                     </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="204.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Unlimited access to all files" />
+                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="204.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Tous les accessoires" />
                                  </children>
                               </HBox>
-                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="248.0">
-                                 <children>
-                                    <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../icons/Delete.png" />
-                                       </image>
-                                    </ImageView>
-                                    <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="204.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Unlimited  Storage" />
-                                 </children>
-                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="248.0" />
                               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="235.0" prefHeight="45.0" prefWidth="248.0">
                                  <children>
                                     <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
@@ -317,5 +284,15 @@
             </VBox>
          </children>
       </GridPane>
+      <HBox alignment="CENTER_LEFT" layoutX="386.0" layoutY="5.0" prefHeight="45.0" prefWidth="361.0">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/check.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="CENTER" prefHeight="41.0" prefWidth="292.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Toutes offres sont personnalisables" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

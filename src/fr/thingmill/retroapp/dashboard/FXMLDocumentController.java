@@ -34,8 +34,6 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private AnchorPane holderPane;
     @FXML
-    private JFXButton btninfo;
-    @FXML
     private JFXButton btnHome;
     @FXML
     private JFXButton btnInstall;
@@ -66,7 +64,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private JFXButton linkGithub;
     
-    AnchorPane navigate,install,profiles,manual,settings,home,info,buy,creator;
+    AnchorPane navigate,install,profiles,manual,settings,home,buy,creator;
     @FXML
     private JFXButton btnControls;
 
@@ -79,7 +77,6 @@ public class FXMLDocumentController implements Initializable {
              manual = FXMLLoader.load(getClass().getResource("manual.fxml"));
              settings = FXMLLoader.load(getClass().getResource("settings.fxml"));
              home = FXMLLoader.load(getClass().getResource("home.fxml"));
-             info = FXMLLoader.load(getClass().getResource("info.fxml"));
              buy = FXMLLoader.load(getClass().getResource("buy.fxml"));
              creator = FXMLLoader.load(getClass().getResource("creator.fxml"));
              

@@ -18,7 +18,7 @@
          <right>
             <Label text="ipadresse" textFill="WHITE" BorderPane.alignment="CENTER">
                <graphic>
-                  <Label prefHeight="32.0" prefWidth="116.0" text="Connecté :" textFill="WHITE">
+                  <Label prefHeight="32.0" prefWidth="116.0" text="Status :" textFill="WHITE">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -30,7 +30,7 @@
             </Label>
          </right>
          <left>
-            <Label lineSpacing="1.0" prefHeight="42.0" prefWidth="292.0" style="-fx-font-size: 20; -fx-text-fill: #7387A8;" text="RetroApp - Dashboard" BorderPane.alignment="CENTER">
+            <Label lineSpacing="1.0" prefHeight="42.0" prefWidth="357.0" style="-fx-font-size: 20; -fx-text-fill: #7387A8;" text="RetroApp - Dashboard" BorderPane.alignment="CENTER">
                <padding>
                   <Insets left="40.0" />
                </padding>
@@ -106,15 +106,15 @@
                   <Font name="Roboto Bold" size="14.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="#a1aec4" glyphName="shopping-cart" size="17" wrappingWidth="37.0" />
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="SHOPPING_CART" size="17" wrappingWidth="39.0" />
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="btninfo" onAction="#switchButtonInfo" prefHeight="46.0" prefWidth="211.0" style="-fx-alignment: left;" styleClass="nav-button" text="A propos" textFill="#a1aec4">
+            <JFXButton fx:id="btninfo" onAction="#switchButtonInfo" prefHeight="40.0" prefWidth="217.0" style="-fx-alignment: left;" styleClass="nav-button" text="A propos" textFill="#a1aec4">
                <font>
                   <Font name="Roboto Bold" size="14.0" />
                </font>
                <graphic>
-                  <FontAwesomeIconView fill="#a1aec4" glyphName="INFO" lineSpacing="2.0" size="18.0" wrappingWidth="35.66668701171875" />
+                  <FontAwesomeIconView fill="#a1aec4" glyphName="INFO" lineSpacing="5.0" size="18.0" wrappingWidth="35.66668701171875" />
                </graphic>
             </JFXButton>
             <JFXButton fx:id="btnCreator" accessibleRole="TEXT" onAction="#switchButtonCreator" prefHeight="28.0" prefWidth="240.0" style="-fx-alignment: left;" styleClass="nav-button" text="Made with ❤ in France" textFill="#a1aec4">

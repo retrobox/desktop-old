@@ -48,7 +48,9 @@ public class FXMLDocumentControllercreator implements Initializable {
     
     @FXML
     private JFXButton btnControls;
-
+    @FXML
+    private JFXButton linkJUnit;
+    
     public void initialize(URL url, ResourceBundle rb) {
         //Load all fxmls in a cach
 
@@ -95,6 +97,12 @@ public class FXMLDocumentControllercreator implements Initializable {
     }
     @FXML
     private void linkGithub(ActionEvent event) {
+//openlink
+
+
+    }
+    @FXML
+    private void linkJUnit(ActionEvent event) {
 //openlink
 
 

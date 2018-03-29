@@ -97,7 +97,7 @@
             <Label prefHeight="27.0" prefWidth="213.0" rotate="180.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-text-fill: #7387A8; -fx-border-color: #7387A8; -fx-border-width: 0 0 2 0;" />
          </children>
       </VBox>
-      <AnchorPane fx:id="holderPane" layoutX="211.0" layoutY="42.0" prefHeight="720.0" prefWidth="1151.0" />
+      <AnchorPane fx:id="holderPane" layoutX="211.0" layoutY="42.0" prefHeight="720.0" prefWidth="1147.0" />
       <VBox layoutY="625.0" prefHeight="136.0" prefWidth="211.0" style="-fx-background-color: #2A3F54;">
          <children>
             <Label prefHeight="27.0" prefWidth="211.0" style="-fx-alignment: center; -fx-font-size: 16; -fx-text-fill: #7387A8; -fx-border-color: #7387A8; -fx-border-width: 0 0 2 0;" />
@@ -127,6 +127,6 @@
             </JFXButton>
          </children>
       </VBox>
-      <VBox layoutY="326.0" prefHeight="318.0" prefWidth="211.0" style="-fx-background-color: #2A3F54;" />
+      <VBox layoutY="326.0" prefHeight="311.0" prefWidth="211.0" style="-fx-background-color: #2A3F54;" />
    </children>
 </AnchorPane>

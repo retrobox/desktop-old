@@ -6,10 +6,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
     <children>
       <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Navigation..." />
-      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="1.0" prefWidth="1148.0" />
       <VBox layoutX="71.0" layoutY="143.0" spacing="30.0" />
       <VBox layoutX="636.0" layoutY="143.0" spacing="30.0" />
       <Label layoutX="441.0" layoutY="337.0" text="Le dossier \\Retropie est ouvert !">

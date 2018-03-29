@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="713.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <Label layoutX="19.0" layoutY="17.0" prefHeight="30.0" prefWidth="292.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Home - Centre d'information" />
-      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
-      <VBox layoutX="681.0" layoutY="196.0" prefHeight="453.0" prefWidth="465.0" spacing="48.0">
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="0.0" prefWidth="1144.0" />
+      <VBox layoutX="645.0" layoutY="134.0" prefHeight="453.0" prefWidth="465.0" spacing="48.0">
          <children>
             <AnchorPane prefHeight="72.0" prefWidth="465.0" style="-fx-background-color: #00C0EF; -fx-border-radius: 4; -fx-background-radius: 4; -fx-border-color: #009ABF; -fx-border-width: 0 0 0 4;">
                <children>
@@ -43,7 +43,7 @@
             </AnchorPane>
          </children>
       </VBox>
-      <Separator layoutX="281.0" layoutY="383.0" prefHeight="4.0" prefWidth="657.0" rotate="90.0" />
+      <Separator layoutX="278.0" layoutY="385.0" prefHeight="4.0" prefWidth="660.0" rotate="90.0" />
       <JFXButton layoutX="36.0" layoutY="104.0" />
     </children>
     

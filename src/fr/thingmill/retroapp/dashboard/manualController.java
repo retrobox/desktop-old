@@ -16,8 +16,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -33,9 +35,6 @@ public class manualController implements Initializable {
     private AnchorPane holderPane;
 
     @FXML
-    private WebView web;
-    
-    @FXML
     private JFXButton button1;
     
     @FXML
@@ -46,37 +45,30 @@ public class manualController implements Initializable {
     
     @FXML
     private JFXButton button4;
+    @FXML
+    private WebView web;
     
     public void initialize(URL url, ResourceBundle rb) {
         //Load all fxmls in a cach
 
     }
-
     //Set selected node to a content holder
     ////////////////////////////////////////////////////////////////////////////////////    ////////////////////////////////////////////////////////////////////////////////////
     @FXML
     private void webManual(ActionEvent event) {
-//openlink
-
-
+    	web.getEngine().load("https://github.com/retrobox/raspberrypi/wiki/FR-installation-manuelle-retropie");
     }
 
     @FXML
     private void webTechnical(ActionEvent event) {
-//openlink
-
-
+    	web.getEngine().load("https://github.com/retrobox/raspberrypi/wiki/FR-caract%C3%A9ristiques-techniques");
     }
     @FXML
     private void webIssues(ActionEvent event) {
-//openlink
-
-
+    	web.getEngine().load("https://github.com/retrobox/raspberrypi/wiki/FR-problemes");
     }
     @FXML
     private void webGetting(ActionEvent event) {
-//openlink
-
-
+    	web.getEngine().load("https://github.com/retrobox/raspberrypi/wiki/FR-getting-started-avec-retropie");
     }
 }

@@ -11,16 +11,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane id="AnchorPane" fx:id="holderPane" prefHeight="713.0" prefWidth="1219.0" stylesheets="@custom.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.thingmill.retroapp.dashboard.manualController">
+<AnchorPane id="AnchorPane" fx:id="holderPane" prefHeight="720.0" prefWidth="1152.0" stylesheets="@custom.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.thingmill.retroapp.dashboard.manualController">
      <children>
       <Label layoutX="19.0" layoutY="17.0" prefHeight="29.0" prefWidth="207.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #7387A8;" text="Tous les manuels" />
-      <Separator layoutX="3.0" layoutY="55.0" prefHeight="4.0" prefWidth="1213.0" />
-      <Pane layoutX="51.0" layoutY="84.0" prefHeight="128.0" prefWidth="277.0" style="-fx-background-color: #F39C12; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+      <Separator layoutX="3.0" layoutY="55.0" prefHeight="5.0" prefWidth="1146.0" />
+      <Separator layoutX="-1.0" layoutY="382.0" prefHeight="5.0" prefWidth="655.0" rotate="90.0" />
+      <WebView fx:id="web" layoutX="329.0" layoutY="59.0" prefHeight="655.0" prefWidth="822.0" />
+      <Pane layoutX="19.0" layoutY="94.0" prefHeight="128.0" prefWidth="277.0" style="-fx-background-color: #F39C12; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
          <children>
             <Pane prefHeight="128.0" prefWidth="92.0" style="-fx-background-color: #C37D0E;">
                <children>
                   <FontAwesomeIconView glyphName="BOOK" layoutX="14.0" layoutY="88.0" size="70" />
-                  <JFXButton fx:id="button1" layoutX="1.0" layoutY="1.0" onAction="#webManual" prefHeight="128.0" prefWidth="277.0" text=" " />
                </children>
             </Pane>
             <VBox layoutX="93.0" layoutY="12.0" prefHeight="105.0" prefWidth="185.0" spacing="10.0">
@@ -38,9 +39,10 @@
                   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="155.0" style="-fx-font-size: 16; -fx-font-weight: bold; -fx-text-fill: white;" text="70% terminé" />
                </children>
             </VBox>
+            <JFXButton fx:id="button1" onAction="#webManual" prefHeight="128.0" prefWidth="277.0" text=" " />
          </children>
       </Pane>
-      <VBox layoutX="144.0" layoutY="96.0" prefHeight="105.0" prefWidth="185.0" spacing="10.0">
+      <VBox layoutX="112.0" layoutY="106.0" prefHeight="105.0" prefWidth="185.0" spacing="10.0">
          <children>
             <VBox prefHeight="54.0" prefWidth="155.0">
                <children>
@@ -52,12 +54,7 @@
             </VBox>
          </children>
       </VBox>
-      <VBox layoutX="51.0" layoutY="400.0" prefHeight="54.0" prefWidth="155.0">
-         <padding>
-            <Insets left="10.0" />
-         </padding>
-      </VBox>
-      <Pane layoutX="51.0" layoutY="240.0" prefHeight="128.0" prefWidth="277.0" style="-fx-background-color: #00C0EF; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+      <Pane layoutX="20.0" layoutY="245.0" prefHeight="128.0" prefWidth="277.0" style="-fx-background-color: #00C0EF; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
          <children>
             <Pane prefHeight="128.0" prefWidth="92.0" style="-fx-background-color: #009ABF;">
                <children>
@@ -82,7 +79,7 @@
             <JFXButton fx:id="button2" onAction="#webTechnical" prefHeight="128.0" prefWidth="277.0" text=" " />
          </children>
       </Pane>
-      <Pane layoutX="51.0" layoutY="394.0" prefHeight="128.0" prefWidth="277.0" style="-fx-background-color: #DD4B39; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+      <Pane layoutX="20.0" layoutY="404.0" prefHeight="128.0" prefWidth="277.0" style="-fx-background-color: #DD4B39; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
          <children>
             <Pane prefHeight="128.0" prefWidth="92.0" style="-fx-background-color: #B13C2E;">
                <children>
@@ -107,13 +104,13 @@
             <JFXButton fx:id="button3" onAction="#webIssues" prefHeight="128.0" prefWidth="277.0" text=" " />
          </children>
       </Pane>
-      <Pane layoutX="51.0" layoutY="394.0" prefHeight="128.0" prefWidth="92.0" style="-fx-background-color: #B13C2E;">
+      <Pane layoutX="20.0" layoutY="404.0" prefHeight="128.0" prefWidth="92.0" style="-fx-background-color: #B13C2E;">
          <children>
             <FontAwesomeIconView glyphName="BOOK" layoutX="14.0" layoutY="84.0" size="70" />
          </children>
       </Pane>
-      <FontAwesomeIconView glyphName="BOOK" layoutX="65.0" layoutY="478.0" size="70" />
-      <Pane layoutX="51.0" layoutY="551.0" prefHeight="128.0" prefWidth="277.0" style="-fx-background-color: #00A65A; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+      <FontAwesomeIconView glyphName="BOOK" layoutX="34.0" layoutY="488.0" size="70" />
+      <Pane layoutX="20.0" layoutY="564.0" prefHeight="128.0" prefWidth="277.0" style="-fx-background-color: #00A65A; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
          <children>
             <Pane prefHeight="128.0" prefWidth="92.0" style="-fx-background-color: #008548;">
                <children>
@@ -139,8 +136,6 @@
             <JFXButton fx:id="button4" onAction="#webGetting" prefHeight="128.0" prefWidth="277.0" text=" " />
          </children>
       </Pane>
-      <Separator layoutX="50.0" layoutY="382.0" prefHeight="5.0" prefWidth="655.0" rotate="90.0" />
-      <WebView fx:id="web" layoutX="380.0" layoutY="59.0" prefHeight="655.0" prefWidth="839.0" />
       
    </children>
 </AnchorPane>

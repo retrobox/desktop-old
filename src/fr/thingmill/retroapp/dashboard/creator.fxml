@@ -53,7 +53,7 @@
             <Image url="@../icons/logo-JFX.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="57.0" fitWidth="53.0" layoutX="226.0" layoutY="654.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="57.0" fitWidth="101.0" layoutX="226.0" layoutY="654.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../icons/os.png" />
          </image>

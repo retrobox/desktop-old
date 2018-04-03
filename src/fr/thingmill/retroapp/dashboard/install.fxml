@@ -424,7 +424,7 @@
                                                 <Image url="@../icons/ic_file_download_black_24dp_2x.png" />
                                              </image>
                                           </ImageView>
-                                          <JFXButton alignment="TOP_LEFT" layoutX="245.0" layoutY="167.0" prefHeight="25.0" prefWidth="29.0" text=" " />
+                                          <JFXButton fx:id="buttonetienne" alignment="TOP_LEFT" layoutX="245.0" layoutY="167.0" prefHeight="25.0" prefWidth="29.0" text=" " />
                                        </children>
                                     </Pane>
                                     <Pane prefHeight="195.0" prefWidth="97.0" />

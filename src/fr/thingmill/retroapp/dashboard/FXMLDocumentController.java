@@ -107,7 +107,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void switchHome(ActionEvent event) {
-        setNode(creator);
+        setNode(home);
     }
 
     @FXML

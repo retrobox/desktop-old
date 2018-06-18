@@ -1,30 +1,27 @@
+# thingmill.retrobox.app
 
-# RetroBox Console - Git
-<div align="center" color="#0094D2">
-	<img src="https://stoneset.pw/images/retrobox.jpg" height="200" alt="W" /><br><br>
-    
-    La console retro, open-source !
-</div>
+> The RetroBox application
 
-## Fonctionnement de l’application :
+## Build Setup
 
+``` bash
+# install dependencies
+npm install
 
+# serve with hot reload at localhost:8080
+npm run dev
 
-![alt text](https://files.lefuturiste.fr/direct/9D71478B06BE6E5AD1A2.jpg "Fonctionnement de l'application")
+# build for production with minification
+npm run build
 
+# build for production and view the bundle analyzer report
+npm run build --report
 
-Screenshot + Explicatiosn asap
+# run unit tests
+npm run unit
 
+# run all tests
+npm test
+```
 
-__License :__
-https://creativecommons.org/licenses/by-nc-sa/3.0/
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
-
-__Copyright :__
-
-RetroBox & StoneSet & Wabfall & Le_Futuriste & Pizzacus
-
-~-~
-
-Site officiel : https://retrobox.tech
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
